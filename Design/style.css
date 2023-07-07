@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+header {
+    display: inline;
+  }
+
+  nav {
+    background-color: #dfcc22f0;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+   
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 3rem;
+  }
+   
+  nav li {
+    list-style-type: none;
+  }
+   
+  nav a {
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+   
+  nav a:hover {
+    font-weight: bold;
+  }
+  .jumbotron {
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 10px 10px 16px #f76565f0;
+    font-weight: bolder;
+    padding: 60px;
+    background: url(https://media-assets-ggwp.s3.ap-southeast-1.amazonaws.com/2020/12/fakta-ramen-ichiraku-di-naruto-640x360.jpg) center center;
+    background-color: #f2c512;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.793);
+  }
+  main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+  }
+  #content {
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+  aside {
+    flex: 1;
+  }
+  h2 {
+    color: rgb(204, 164, 116);
+  }
+  .card {
+    box-shadow: 0 2px 8px 2px rgba(199, 165, 12, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+  } 
+  .profile header {
+    text-align: center;
+  }
+   
+  .featured-image {
+    width: 90%;
+    max-height: 400px;
+   
+    object-fit: cover;
+    object-position: center;
+  }
+   
+  .profile img {
+    width: 200px;
+  }
+  footer {
+    padding: 20px;
+    color: #fff;
+    background-color: #dfcc22f0;
+  }
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
